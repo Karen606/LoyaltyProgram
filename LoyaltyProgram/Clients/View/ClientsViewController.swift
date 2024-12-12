@@ -11,7 +11,7 @@ import Combine
 class ClientsViewController: UIViewController {
 
     @IBOutlet weak var searchTextField: UITextField!
-    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var clientsTableView: UITableView!
     @IBOutlet weak var addButton: UIButton!
     private let viewModel = ClientsViewModel.shared
@@ -28,7 +28,7 @@ class ClientsViewController: UIViewController {
         setNavigationMenuButton()
         searchTextField.attributedPlaceholder = NSAttributedString(string: "Enter the name of the client", attributes: [.font: UIFont.bold(size: 9) ?? .systemFont(ofSize: 10), .foregroundColor: #colorLiteral(red: 0.768627451, green: 0.768627451, blue: 0.768627451, alpha: 1)])
         searchTextField.font = .bold(size: 9)
-        saveButton.titleLabel?.font = .black(size: 9)
+        searchButton.titleLabel?.font = .black(size: 9)
         addButton.titleLabel?.font = .semibold(size: 16)
         clientsTableView.register(UINib(nibName: "ClientTableViewCell", bundle: nil), forCellReuseIdentifier: "ClientTableViewCell")
         clientsTableView.delegate = self

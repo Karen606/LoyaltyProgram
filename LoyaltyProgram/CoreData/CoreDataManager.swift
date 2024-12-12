@@ -78,29 +78,36 @@ class CoreDataManager {
         }
     }
     
-//    func changeOrderStatus(orderId: UUID, newStatus: Int, completion: @escaping (Error?) -> Void) {
-//        let backgroundContext = persistentContainer.newBackgroundContext()
-//        backgroundContext.perform {
-//            let fetchRequest: NSFetchRequest<Order> = Order.fetchRequest()
-//            fetchRequest.predicate = NSPredicate(format: "id == %@", orderId as CVarArg)
-//            
-//            do {
-//                if let order = try backgroundContext.fetch(fetchRequest).first {
-//                    order.status = Int32(newStatus)
-//                    try backgroundContext.save()
-//                    DispatchQueue.main.async {
-//                        completion(nil)
-//                    }
-//                } else {
-//                    DispatchQueue.main.async {
-//                        completion(NSError(domain: "", code: 404, userInfo: [NSLocalizedDescriptionKey: "Order not found"]))
-//                    }
-//                }
-//            } catch {
-//                DispatchQueue.main.async {
-//                    completion(error)
-//                }
-//            }
-//        }
-//    }
+    func changePoints(clientID: UUID, incrementPoints: Int?, decrementPoints: Int?, completion: @escaping (Error?) -> Void) {
+        let backgroundContext = persistentContainer.newBackgroundContext()
+        backgroundContext.perform {
+            let fetchRequest: NSFetchRequest<Client> = Client.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "id == %@", clientID as CVarArg)
+            
+            do {
+                let results = try backgroundContext.fetch(fetchRequest)
+                if let client = results.first {
+                    if let incrementPoints = incrementPoints {
+                        client.points += Int64(incrementPoints)
+                    }
+                    if let decrementPoints = decrementPoints {
+                        client.points -= Int64(decrementPoints)
+                    }
+                    try backgroundContext.save()
+                    DispatchQueue.main.async {
+                        completion(nil)
+                    }
+                } else {
+                    let error = NSError(domain: "", code: 404, userInfo: [NSLocalizedDescriptionKey: "Client not found"])
+                    DispatchQueue.main.async {
+                        completion(error)
+                    }
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion(error)
+                }
+            }
+        }
+    }
 }

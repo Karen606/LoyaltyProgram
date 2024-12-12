@@ -52,6 +52,7 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func clickedManagingPoints(_ sender: UIButton) {
+        self.pushViewController(ManagingPointsViewController.self)
     }
     
 }

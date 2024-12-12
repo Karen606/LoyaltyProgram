@@ -12,7 +12,7 @@
             <connections>
                 <outlet property="addButton" destination="aCb-Ai-q9s" id="LWI-vU-LU9"/>
                 <outlet property="clientsTableView" destination="P3w-hU-N1A" id="5O7-le-RWq"/>
-                <outlet property="saveButton" destination="9cP-kS-cBM" id="yiB-RQ-1jW"/>
+                <outlet property="searchButton" destination="9cP-kS-cBM" id="KwM-zy-hBd"/>
                 <outlet property="searchTextField" destination="IFq-Yw-PIz" id="XM8-fj-dLL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -47,7 +47,7 @@
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="Save">
+                            <state key="normal" title="Search">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <userDefinedRuntimeAttributes>
