@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DDB51DE9888F41AF2A5E231 /* Pods_LoyaltyProgram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78267414D3CA4B6048BABC7F /* Pods_LoyaltyProgram.framework */; };
 		6B2501952D0AEAD6004B50C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B25018A2D0AEAD6004B50C1 /* Assets.xcassets */; };
 		6B2501972D0AEAD6004B50C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B25018D2D0AEAD6004B50C1 /* LaunchScreen.storyboard */; };
 		6B2501982D0AEAD6004B50C1 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2501902D0AEAD6004B50C1 /* Root.storyboard */; };
@@ -45,9 +46,12 @@
 		6B2501EC2D0B560B004B50C1 /* ManagingPointsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B2501EA2D0B560B004B50C1 /* ManagingPointsViewController.xib */; };
 		6B2501EF2D0B6089004B50C1 /* ManagingPointsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2501EE2D0B6089004B50C1 /* ManagingPointsViewModel.swift */; };
 		6B2501F32D0B7120004B50C1 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2501F22D0B7120004B50C1 /* MenuViewModel.swift */; };
+		6B2501F72D0B7C41004B50C1 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B2501F62D0B7C41004B50C1 /* SettingsViewController.xib */; };
+		6B2501F82D0B7C41004B50C1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2501F52D0B7C41004B50C1 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B5BBE9AA4644A796887A044 /* Pods-LoyaltyProgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoyaltyProgram.release.xcconfig"; path = "Target Support Files/Pods-LoyaltyProgram/Pods-LoyaltyProgram.release.xcconfig"; sourceTree = "<group>"; };
 		6B25016E2D0AEACF004B50C1 /* LoyaltyProgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoyaltyProgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2501892D0AEAD6004B50C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B25018A2D0AEAD6004B50C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +92,10 @@
 		6B2501EA2D0B560B004B50C1 /* ManagingPointsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManagingPointsViewController.xib; sourceTree = "<group>"; };
 		6B2501EE2D0B6089004B50C1 /* ManagingPointsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagingPointsViewModel.swift; sourceTree = "<group>"; };
 		6B2501F22D0B7120004B50C1 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		6B2501F52D0B7C41004B50C1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6B2501F62D0B7C41004B50C1 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		7686F7C743A45680091D3840 /* Pods-LoyaltyProgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoyaltyProgram.debug.xcconfig"; path = "Target Support Files/Pods-LoyaltyProgram/Pods-LoyaltyProgram.debug.xcconfig"; sourceTree = "<group>"; };
+		78267414D3CA4B6048BABC7F /* Pods_LoyaltyProgram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoyaltyProgram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDB51DE9888F41AF2A5E231 /* Pods_LoyaltyProgram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +115,8 @@
 			children = (
 				6B2501932D0AEAD6004B50C1 /* LoyaltyProgram */,
 				6B25016F2D0AEACF004B50C1 /* Products */,
+				C8768ADC21AE0A079EB86171 /* Pods */,
+				D996CB694A9D87C87A25EBEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +131,7 @@
 		6B2501932D0AEAD6004B50C1 /* LoyaltyProgram */ = {
 			isa = PBXGroup;
 			children = (
+				6B2501F42D0B7BEF004B50C1 /* Settings */,
 				6B2501E72D0B55E0004B50C1 /* ManagingPoints */,
 				6B2501DE2D0B3B79004B50C1 /* ClientForm */,
 				6B2501C82D0B0491004B50C1 /* Clients */,
@@ -315,6 +327,32 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		6B2501F42D0B7BEF004B50C1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6B2501F52D0B7C41004B50C1 /* SettingsViewController.swift */,
+				6B2501F62D0B7C41004B50C1 /* SettingsViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C8768ADC21AE0A079EB86171 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7686F7C743A45680091D3840 /* Pods-LoyaltyProgram.debug.xcconfig */,
+				4B5BBE9AA4644A796887A044 /* Pods-LoyaltyProgram.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D996CB694A9D87C87A25EBEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78267414D3CA4B6048BABC7F /* Pods_LoyaltyProgram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,17 +360,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B2501842D0AEAD1004B50C1 /* Build configuration list for PBXNativeTarget "LoyaltyProgram" */;
 			buildPhases = (
+				0BD0B26BA2663CF568A1559B /* [CP] Check Pods Manifest.lock */,
 				6B25016A2D0AEACF004B50C1 /* Sources */,
 				6B25016B2D0AEACF004B50C1 /* Frameworks */,
 				6B25016C2D0AEACF004B50C1 /* Resources */,
+				B2088BAAF2CB442013A967CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LoyaltyProgram;
-			packageProductDependencies = (
-			);
 			productName = LoyaltyProgram;
 			productReference = 6B25016E2D0AEACF004B50C1 /* LoyaltyProgram.app */;
 			productType = "com.apple.product-type.application";
@@ -380,6 +418,7 @@
 				6B2501972D0AEAD6004B50C1 /* LaunchScreen.storyboard in Resources */,
 				6B2501BD2D0AEE88004B50C1 /* Roboto-BoldCondensed.ttf in Resources */,
 				6B2501E22D0B3B97004B50C1 /* ClientFormViewController.xib in Resources */,
+				6B2501F72D0B7C41004B50C1 /* SettingsViewController.xib in Resources */,
 				6B2501982D0AEAD6004B50C1 /* Root.storyboard in Resources */,
 				6B2501C72D0AF969004B50C1 /* RobotoMono-Italic.ttf in Resources */,
 				6B2501C22D0AF153004B50C1 /* MenuViewController.xib in Resources */,
@@ -395,6 +434,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BD0B26BA2663CF568A1559B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoyaltyProgram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2088BAAF2CB442013A967CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoyaltyProgram/Pods-LoyaltyProgram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoyaltyProgram/Pods-LoyaltyProgram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoyaltyProgram/Pods-LoyaltyProgram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6B25016A2D0AEACF004B50C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -408,6 +489,7 @@
 				6B25019C2D0AEAD6004B50C1 /* RootViewController.swift in Sources */,
 				6B2501EF2D0B6089004B50C1 /* ManagingPointsViewModel.swift in Sources */,
 				6B2501AA2D0AED90004B50C1 /* UIView.swift in Sources */,
+				6B2501F82D0B7C41004B50C1 /* SettingsViewController.swift in Sources */,
 				6B2501DA2D0B315F004B50C1 /* CoreDataManager.swift in Sources */,
 				6B2501E32D0B3B97004B50C1 /* ClientFormViewController.swift in Sources */,
 				6B2501D32D0B2FAE004B50C1 /* ClientTableViewCell.swift in Sources */,
@@ -451,6 +533,7 @@
 /* Begin XCBuildConfiguration section */
 		6B2501852D0AEAD1004B50C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7686F7C743A45680091D3840 /* Pods-LoyaltyProgram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,8 +545,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Root;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,14 +555,17 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Karen.LoyaltyProgram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		6B2501862D0AEAD1004B50C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5BBE9AA4644A796887A044 /* Pods-LoyaltyProgram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,8 +577,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Root;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,9 +587,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Karen.LoyaltyProgram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -542,7 +632,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -605,7 +695,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

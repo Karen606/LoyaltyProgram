@@ -33,7 +33,7 @@ class ManagingPointsViewController: UIViewController {
     
     func setupUI() {
         setNavigationMenuButton()
-        searchTextField.attributedPlaceholder = NSAttributedString(string: "Enter the name of the client", attributes: [.font: UIFont.bold(size: 9) ?? .systemFont(ofSize: 10), .foregroundColor: #colorLiteral(red: 0.768627451, green: 0.768627451, blue: 0.768627451, alpha: 1)])
+        searchTextField.attributedPlaceholder = NSAttributedString(string: "Enter the phone number", attributes: [.font: UIFont.bold(size: 9) ?? .systemFont(ofSize: 10), .foregroundColor: #colorLiteral(red: 0.768627451, green: 0.768627451, blue: 0.768627451, alpha: 1)])
         searchTextField.font = .bold(size: 9)
         searchButton.titleLabel?.font = .black(size: 9)
         nameLabel.font = .regular(size: 18)

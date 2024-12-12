@@ -53,7 +53,7 @@ extension UIViewController {
     }
     
     @objc func clickedSettings() {
-        
+        self.pushViewController(SettingsViewController.self)
     }
     
     func pushViewController<T: UIViewController>(_ viewControllerType: T.Type, animated: Bool = true) {
