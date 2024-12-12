@@ -16,10 +16,10 @@ class BaseButton: UIButton {
     }
     
     func commonInit() {
-        self.titleLabel?.font = .medium(size: 16)
+        self.titleLabel?.font = .semibold(size: 16)
         self.setTitleColor(.white, for: .normal)
         self.backgroundColor = .button
-        self.layer.cornerRadius = 20
+        self.layer.cornerRadius = 3
     }
     
     override init(frame: CGRect) {

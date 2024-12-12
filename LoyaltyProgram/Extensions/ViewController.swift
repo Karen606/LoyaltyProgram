@@ -28,7 +28,7 @@ extension UIViewController {
     
     func setNavigationMenuButton() {
         let menuButton = UIButton(type: .custom)
-        menuButton.setImage(.menuIcon, for: .normal)
+        menuButton.setImage(.homeIcon, for: .normal)
         menuButton.addTarget(self, action: #selector(clickedMenu), for: .touchUpInside)
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: menuButton)
     }
@@ -49,7 +49,7 @@ extension UIViewController {
     }
     
     @objc func clickedMenu() {
-        
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     @objc func clickedSettings() {
