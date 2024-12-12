@@ -44,6 +44,7 @@
 		6B2501EB2D0B560B004B50C1 /* ManagingPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2501E92D0B560B004B50C1 /* ManagingPointsViewController.swift */; };
 		6B2501EC2D0B560B004B50C1 /* ManagingPointsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B2501EA2D0B560B004B50C1 /* ManagingPointsViewController.xib */; };
 		6B2501EF2D0B6089004B50C1 /* ManagingPointsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2501EE2D0B6089004B50C1 /* ManagingPointsViewModel.swift */; };
+		6B2501F32D0B7120004B50C1 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2501F22D0B7120004B50C1 /* MenuViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		6B2501E92D0B560B004B50C1 /* ManagingPointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagingPointsViewController.swift; sourceTree = "<group>"; };
 		6B2501EA2D0B560B004B50C1 /* ManagingPointsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManagingPointsViewController.xib; sourceTree = "<group>"; };
 		6B2501EE2D0B6089004B50C1 /* ManagingPointsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagingPointsViewModel.swift; sourceTree = "<group>"; };
+		6B2501F22D0B7120004B50C1 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		6B2501BE2D0AF13B004B50C1 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				6B2501F02D0B70C3004B50C1 /* ViewModel */,
 				6B2501BF2D0AF144004B50C1 /* View */,
 			);
 			path = Menu;
@@ -296,6 +299,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		6B2501F02D0B70C3004B50C1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B2501F12D0B7117004B50C1 /* ViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6B2501F12D0B7117004B50C1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B2501F22D0B7120004B50C1 /* MenuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -396,6 +415,7 @@
 				6B2501E62D0B3D04004B50C1 /* ClientFormViewModel.swift in Sources */,
 				6B2501AC2D0AED90004B50C1 /* ViewController.swift in Sources */,
 				6B2501C32D0AF153004B50C1 /* MenuViewController.swift in Sources */,
+				6B2501F32D0B7120004B50C1 /* MenuViewModel.swift in Sources */,
 				6B2501CF2D0B06A3004B50C1 /* ShadowView.swift in Sources */,
 				6B2501CC2D0B04A4004B50C1 /* ClientsViewController.swift in Sources */,
 				6B2501AD2D0AED90004B50C1 /* String.swift in Sources */,

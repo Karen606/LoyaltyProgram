@@ -40,8 +40,8 @@ of Customer points:</string>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ks8-z6-PwI">
-                            <rect key="frame" x="121" y="72.666666666666657" width="37" height="26.333333333333329"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ks8-z6-PwI">
+                            <rect key="frame" x="133.33333333333334" y="72.666666666666657" width="12.333333333333343" height="26.333333333333329"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -51,7 +51,7 @@ of Customer points:</string>
                     <constraints>
                         <constraint firstItem="xJr-e2-IZz" firstAttribute="leading" secondItem="1VZ-5J-zMR" secondAttribute="leading" constant="18" id="Ksq-ox-rf9"/>
                         <constraint firstItem="xJr-e2-IZz" firstAttribute="top" secondItem="1VZ-5J-zMR" secondAttribute="top" constant="20" id="Otk-hT-QJp"/>
-                        <constraint firstItem="Ks8-z6-PwI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1VZ-5J-zMR" secondAttribute="leading" id="Qll-En-9ja"/>
+                        <constraint firstItem="Ks8-z6-PwI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1VZ-5J-zMR" secondAttribute="leading" constant="8" id="Qll-En-9ja"/>
                         <constraint firstAttribute="bottom" secondItem="zzA-Aq-wWW" secondAttribute="bottom" id="UFR-XE-aTo"/>
                         <constraint firstItem="Ks8-z6-PwI" firstAttribute="centerX" secondItem="xJr-e2-IZz" secondAttribute="centerX" id="bz3-xl-S6n"/>
                         <constraint firstItem="Ks8-z6-PwI" firstAttribute="top" secondItem="xJr-e2-IZz" secondAttribute="bottom" id="dsi-Fl-Wds"/>

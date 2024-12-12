@@ -110,4 +110,26 @@ class CoreDataManager {
             }
         }
     }
+    
+    func addPointsToAllClients(points: Int, completion: @escaping (Error?) -> Void) {
+        let backgroundContext = persistentContainer.newBackgroundContext()
+        backgroundContext.perform {
+            let fetchRequest: NSFetchRequest<Client> = Client.fetchRequest()
+            
+            do {
+                let results = try backgroundContext.fetch(fetchRequest)
+                for client in results {
+                    client.points += Int64(points)
+                }
+                try backgroundContext.save()
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion(error)
+                }
+            }
+        }
+    }
 }
