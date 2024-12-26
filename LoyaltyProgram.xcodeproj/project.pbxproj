@@ -48,6 +48,11 @@
 		6B2501F32D0B7120004B50C1 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2501F22D0B7120004B50C1 /* MenuViewModel.swift */; };
 		6B2501F72D0B7C41004B50C1 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B2501F62D0B7C41004B50C1 /* SettingsViewController.xib */; };
 		6B2501F82D0B7C41004B50C1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2501F52D0B7C41004B50C1 /* SettingsViewController.swift */; };
+		6BE481AA2D1D9AB600E3D820 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE481A92D1D9AB600E3D820 /* NetworkManager.swift */; };
+		6BE481AD2D1D9AFD00E3D820 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE481AC2D1D9AFD00E3D820 /* PrivacyViewController.swift */; };
+		6BE481AF2D1D9B0800E3D820 /* PrivacyWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE481AE2D1D9B0800E3D820 /* PrivacyWebViewController.swift */; };
+		6BE481B12D1D9CE000E3D820 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BE481B02D1D9CE000E3D820 /* GoogleService-Info.plist */; };
+		6BE481B32D1D9CF400E3D820 /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 6BE481B22D1D9CF400E3D820 /* codemagic.yaml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +99,11 @@
 		6B2501F22D0B7120004B50C1 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		6B2501F52D0B7C41004B50C1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6B2501F62D0B7C41004B50C1 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		6BE481A92D1D9AB600E3D820 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6BE481AC2D1D9AFD00E3D820 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		6BE481AE2D1D9B0800E3D820 /* PrivacyWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyWebViewController.swift; sourceTree = "<group>"; };
+		6BE481B02D1D9CE000E3D820 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6BE481B22D1D9CF400E3D820 /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 		7686F7C743A45680091D3840 /* Pods-LoyaltyProgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoyaltyProgram.debug.xcconfig"; path = "Target Support Files/Pods-LoyaltyProgram/Pods-LoyaltyProgram.debug.xcconfig"; sourceTree = "<group>"; };
 		78267414D3CA4B6048BABC7F /* Pods_LoyaltyProgram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoyaltyProgram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,6 +123,7 @@
 		6B2501652D0AEACF004B50C1 = {
 			isa = PBXGroup;
 			children = (
+				6BE481B22D1D9CF400E3D820 /* codemagic.yaml */,
 				6B2501932D0AEAD6004B50C1 /* LoyaltyProgram */,
 				6B25016F2D0AEACF004B50C1 /* Products */,
 				C8768ADC21AE0A079EB86171 /* Pods */,
@@ -131,6 +142,8 @@
 		6B2501932D0AEAD6004B50C1 /* LoyaltyProgram */ = {
 			isa = PBXGroup;
 			children = (
+				6BE481AB2D1D9AF600E3D820 /* PrivacyPolicy */,
+				6BE481A82D1D9AAB00E3D820 /* NetowrkManager */,
 				6B2501F42D0B7BEF004B50C1 /* Settings */,
 				6B2501E72D0B55E0004B50C1 /* ManagingPoints */,
 				6B2501DE2D0B3B79004B50C1 /* ClientForm */,
@@ -141,6 +154,7 @@
 				6B2501D82D0B3139004B50C1 /* CoreData */,
 				6B2501892D0AEAD6004B50C1 /* AppDelegate.swift */,
 				6B25018A2D0AEAD6004B50C1 /* Assets.xcassets */,
+				6BE481B02D1D9CE000E3D820 /* GoogleService-Info.plist */,
 				6B25018B2D0AEAD6004B50C1 /* Info.plist */,
 				6B25018D2D0AEAD6004B50C1 /* LaunchScreen.storyboard */,
 				6B25018E2D0AEAD6004B50C1 /* LoyaltyProgram.xcdatamodeld */,
@@ -336,6 +350,23 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		6BE481A82D1D9AAB00E3D820 /* NetowrkManager */ = {
+			isa = PBXGroup;
+			children = (
+				6BE481A92D1D9AB600E3D820 /* NetworkManager.swift */,
+			);
+			path = NetowrkManager;
+			sourceTree = "<group>";
+		};
+		6BE481AB2D1D9AF600E3D820 /* PrivacyPolicy */ = {
+			isa = PBXGroup;
+			children = (
+				6BE481AC2D1D9AFD00E3D820 /* PrivacyViewController.swift */,
+				6BE481AE2D1D9B0800E3D820 /* PrivacyWebViewController.swift */,
+			);
+			path = PrivacyPolicy;
+			sourceTree = "<group>";
+		};
 		C8768ADC21AE0A079EB86171 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,7 +454,9 @@
 				6B2501C72D0AF969004B50C1 /* RobotoMono-Italic.ttf in Resources */,
 				6B2501C22D0AF153004B50C1 /* MenuViewController.xib in Resources */,
 				6B2501D42D0B2FAE004B50C1 /* ClientTableViewCell.xib in Resources */,
+				6BE481B12D1D9CE000E3D820 /* GoogleService-Info.plist in Resources */,
 				6B2501B72D0AEDF7004B50C1 /* RobotoMono-Regular.ttf in Resources */,
+				6BE481B32D1D9CF400E3D820 /* codemagic.yaml in Resources */,
 				6B2501BB2D0AEE53004B50C1 /* Roboto-Black.ttf in Resources */,
 				6B2501B82D0AEDF7004B50C1 /* RobotoMono-Medium.ttf in Resources */,
 				6B2501CD2D0B04A4004B50C1 /* ClientsViewController.xib in Resources */,
@@ -495,14 +528,17 @@
 				6B2501D32D0B2FAE004B50C1 /* ClientTableViewCell.swift in Sources */,
 				6B2501AB2D0AED90004B50C1 /* BaseTextField.swift in Sources */,
 				6B2501E62D0B3D04004B50C1 /* ClientFormViewModel.swift in Sources */,
+				6BE481AD2D1D9AFD00E3D820 /* PrivacyViewController.swift in Sources */,
 				6B2501AC2D0AED90004B50C1 /* ViewController.swift in Sources */,
 				6B2501C32D0AF153004B50C1 /* MenuViewController.swift in Sources */,
+				6BE481AA2D1D9AB600E3D820 /* NetworkManager.swift in Sources */,
 				6B2501F32D0B7120004B50C1 /* MenuViewModel.swift in Sources */,
 				6B2501CF2D0B06A3004B50C1 /* ShadowView.swift in Sources */,
 				6B2501CC2D0B04A4004B50C1 /* ClientsViewController.swift in Sources */,
 				6B2501AD2D0AED90004B50C1 /* String.swift in Sources */,
 				6B2501AE2D0AED90004B50C1 /* Double.swift in Sources */,
 				6B2501DD2D0B3398004B50C1 /* ClientsViewModel.swift in Sources */,
+				6BE481AF2D1D9B0800E3D820 /* PrivacyWebViewController.swift in Sources */,
 				6B2501AF2D0AED90004B50C1 /* BaseButton.swift in Sources */,
 				6B2501B02D0AED90004B50C1 /* Font.swift in Sources */,
 				6B2501D72D0B30EC004B50C1 /* ClientModel.swift in Sources */,
@@ -553,7 +589,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Karen.LoyaltyProgram;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BonusBridge.WV7Application;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -585,7 +621,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Karen.LoyaltyProgram;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BonusBridge.WV7Application;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
